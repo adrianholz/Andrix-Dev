@@ -1,0 +1,30 @@
+.marquee {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: var(--b1);
+  background: var(--b2);
+  gap: var(--gap);
+  .marquee-content {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-around;
+    min-width: 100%;
+    gap: var(--gap, 10px);
+    animation: scroll var(--time, 30s) linear infinite;
+    line-height: 3.5rem;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}

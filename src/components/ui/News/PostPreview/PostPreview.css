@@ -1,0 +1,109 @@
+.post-preview {
+  background: var(--b1);
+  padding: 40px;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+  align-items: center;
+  box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.4), 0 4px 10px 0 rgba(0, 0, 0, 0.5);
+  position: relative;
+  overflow: hidden;
+  > img {
+    width: 100%;
+    height: 100%;
+    max-height: 260px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0 5px 20px, rgba(0, 0, 0, 0.23) 0 3px 6px;
+    position: relative;
+    z-index: 2;
+  }
+  .post-content {
+    position: relative;
+    z-index: 2;
+  }
+  h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: var(--w1);
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 2rem;
+    color: #aaa;
+  }
+  .post-info {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .post-meta {
+    display: flex;
+    gap: 20px;
+    font-family: Poppins, sans-serif;
+    img {
+      max-width: 25px;
+      width: 100%;
+    }
+    div {
+      display: flex;
+      align-items: center;
+      color: #aaa;
+      gap: 10px;
+    }
+  }
+  a {
+    background: var(--b2);
+    text-decoration: none;
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    color: var(--w1);
+    padding: 18px 36px;
+    border-radius: 20px;
+    transition: 0.2s ease;
+    display: block;
+    max-width: fit-content;
+    &:hover {
+      background: var(--w1);
+      color: var(--b2);
+    }
+  }
+  .blur {
+    z-index: 1;
+    height: 200px;
+    bottom: -130px;
+    filter: blur(90px);
+  }
+}
+
+@media (max-width: 970px) {
+  .post-preview {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 760px) {
+  .post-preview {
+    padding: 20px;
+    gap: 20px;
+    h1 {
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    p {
+      font-size: 1rem;
+    }
+    .post-info {
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+    }
+  }
+}

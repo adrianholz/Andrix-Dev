@@ -1,0 +1,20 @@
+.projects-page {
+  padding: 100px 20px;
+  background: url("/assets/img/webp/bg-paper.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  .container {
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 400px 800px;
+  }
+}
+
+@media (max-width: 1260px) {
+  .projects-page {
+    .container {
+      max-width: 800px;
+      display: block;
+    }
+  }
+}

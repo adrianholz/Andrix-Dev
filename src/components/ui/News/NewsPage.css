@@ -1,0 +1,10 @@
+.news-page {
+  background: var(--b2);
+  .container {
+    padding: 40px 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+  }
+}
