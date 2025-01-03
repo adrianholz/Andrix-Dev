@@ -1,6 +1,5 @@
 import { ServiceContext } from "../../../../app/ServiceContext";
 import Heading from "../Heading/Heading";
-import Interfaces from "../Interfaces/Interfaces";
 import Services from "../Services/Services";
 import Title from "../Title/Title";
 import "./ServicesSection.css";
@@ -8,7 +7,7 @@ import { useContext } from "react";
 import { services } from "../../../../data/home-data";
 
 export default function ServicesSection() {
-  const { videoRef, service, activeIndex, handleTitleChange, imageRefs } =
+  const { service, activeIndex, handleTitleChange, imageRefs } =
     useContext(ServiceContext)!;
 
   return (
@@ -16,8 +15,8 @@ export default function ServicesSection() {
       <Heading
         theme="dark"
         heading="What I do"
-        subheading="I'll make your very own"
-        highlight="Personalized Design"
+        subheading="I'll build you the software"
+        highlight="To suit your needs"
       />
       <div className="content">
         <div className="container">
@@ -30,24 +29,12 @@ export default function ServicesSection() {
             />
 
             <Services
-              videoRef={videoRef}
               activeIndex={activeIndex}
               service={service}
               services={services}
               imageRefs={imageRefs}
               handleTitleChange={handleTitleChange}
             />
-
-            <Title
-              icon="uxui-dark"
-              alt="UX/UI"
-              title="Your interface, your way."
-              description="Captivating digital projects owe much of their success to their
-          interface. With Andrix, you can be sure you'll convey the
-          message you desire to your users, ensuring their experience
-          aligns with your unique style."
-            />
-            <Interfaces />
           </div>
         </div>
       </div>

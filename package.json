@@ -1,5 +1,5 @@
 {
-  "name": "andrix.design",
+  "name": "andrix.dev",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -18,7 +18,8 @@
     "react-helmet": "^6.1.0",
     "react-helmet-async": "^2.0.5",
     "sharp": "^0.33.5",
-    "swiper": "^11.1.15"
+    "swiper": "^11.1.15",
+    "typewriter-effect": "^2.21.0"
   },
   "devDependencies": {
     "@types/node": "^20",

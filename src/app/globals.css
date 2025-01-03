@@ -1,6 +1,4 @@
 :root {
-  --font-poppins: "Poppins", sans-serif;
-  --font-raleway: "Raleway", sans-serif;
   --w1: #fff;
   --b1: #232323;
   --b2: #161616;
@@ -21,7 +19,7 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  font: 500 1.125rem var(--font-raleway);
+  font: 500 1.125rem var(--font-chakra-petch);
 }
 
 img,
@@ -92,21 +90,21 @@ ul {
   opacity: 0.6;
 }
 
-.blur.uxui {
+.blur.code {
   background-image: linear-gradient(to right, #0056ff, #3815ff, #b415ff);
 }
-.blur.artwork {
+.blur.ecommerce {
   background: linear-gradient(to right, #ff057c, #b805ff, #440ec2);
 }
-.blur.brand {
+.blur.desktop {
   background-image: linear-gradient(to right, #f01 0, #1e00ff 100%);
 }
-.blur.social {
+.blur.website {
   background-image: linear-gradient(to right, #0cf, #06f, #8000ff);
 }
 .blur.packaging {
   background-image: linear-gradient(to right, #0aec61, #00d9ff, #0051ff);
 }
-.blur.video {
+.blur.game {
   background: linear-gradient(to right, #960af3, #f10b0b, #e98d0c);
 }

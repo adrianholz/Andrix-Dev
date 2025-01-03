@@ -7,13 +7,13 @@ import { tools } from "../../../../data/home-data";
 export default function TechSection() {
   return (
     <>
-      <Heading
-        theme="dark"
-        heading="Technologies"
-        subheading="These are the design tools"
-        highlight="I have worked with"
-      />
       <section className="techs">
+        <Heading
+          theme="dark"
+          heading="Technologies"
+          subheading="These are the technologies"
+          highlight="I have worked with"
+        />
         <div className="container">
           {tools.map((tool, index) => (
             <Link
@@ -29,7 +29,7 @@ export default function TechSection() {
               }
             >
               <img
-                src={`/assets/img/svg/tech-${tool.name
+                src={`/assets/img/svg/${tool.name
                   .toLowerCase()
                   .replaceAll(" ", "-")}.svg`}
                 alt={`${tool.name} Icon`}

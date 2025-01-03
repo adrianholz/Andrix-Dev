@@ -1,10 +1,8 @@
-import { CSSProperties } from "react";
-
 export const services = [
   {
-    name: "UX/UI Design",
-    file: "uxui",
-    short: "UX/UI",
+    name: "Website Development",
+    file: "website",
+    short: "Web Dev",
     description:
       "Leverage the power of colors, typography, spacing and form to create the experience you desire for your users. Every single element and detail of your interface should have intention and purpose. So let's make them count.",
     process:
@@ -12,9 +10,9 @@ export const services = [
     position: "bottom -70px right -80px",
   },
   {
-    name: "Digital Artwork",
-    file: "artwork",
-    short: "Artwork",
+    name: "Digital Commerce",
+    file: "ecommerce",
+    short: "E-Commerce",
     description:
       "With so little time to capture your audience's attention, you need to make sure your visuals are on point. That's what maximizes conversions and makes your brand stand out. Let's make it happen with stunning digital design.",
     process:
@@ -22,8 +20,8 @@ export const services = [
     position: "bottom -70px right -80px",
   },
   {
-    name: "Visual Identity",
-    file: "brand",
+    name: "Web-based Applications",
+    file: "code",
     short: "Brand",
     description:
       "Communication is key. By defining rules and foundations for designing your company's projects, we convey your ideas, values, and purposes. Visual identity brings your brand to life and also enhances client relationship.",
@@ -32,8 +30,8 @@ export const services = [
     position: "bottom -70px right -80px",
   },
   {
-    name: "Social Media",
-    file: "social",
+    name: "Desktop Applications",
+    file: "desktop",
     short: "Social",
     description:
       "The digital space couldn't get more crowded nowadays. An effective social media strategy means that you can engage and, most importantly, retain your audience. Reach out to your audience and communicate with confidence.",
@@ -42,8 +40,8 @@ export const services = [
     position: "bottom -70px right -80px",
   },
   {
-    name: "Package Design",
-    file: "packaging",
+    name: "Game Development",
+    file: "game",
     short: "Packaging",
     description:
       "Your products deserve the same love as your digital content. Packaging design is there to make sure that, besides being functional, your products stand out on the shelves and in your customers' minds.",
@@ -51,185 +49,91 @@ export const services = [
       "We first have to determine the shape and size of the package, and in which material it will be applied to. Then we analyze the product itself and how we can convey, visually, the experience that's inside of the package.",
     position: "bottom -70px right -80px",
   },
-  {
-    name: "Video Editing",
-    file: "video",
-    short: "Video",
-    description:
-      "Having quality content also means having the possibility of refining it and turning it into something even more engaging. With video editing, turn your raw footage into a polished and professional visual experience.",
-    process:
-      "After sharing the raw material, we start by selecting the media that will be used, and then proceed to the stage of adding transitions, effects, color correction, masking and subtitles. Final step is exporting.",
-    position: "bottom -70px right -80px",
-  },
 ];
-
-export const boxes = [
-  {
-    title: "Simple",
-    styles: {
-      previewImage: {
-        background: "url('assets/img/webp/simple.webp') center / cover",
-      },
-    },
-  },
-  {
-    title: "Elegant",
-    styles: {
-      preview: {
-        borderRadius: "0",
-        boxShadow: "0 5px 20px rgba(17, 12, 46, .15)",
-      },
-      previewImage: {
-        background: "url('assets/img/webp/elegant.webp') center / cover",
-        borderRadius: "0",
-        boxShadow: "inset 0 0 0 8px var(--w1)",
-      },
-      content: {
-        fontFamily: "var(--font-lora)",
-      },
-      button: {
-        borderRadius: "0",
-        textTransform: "uppercase",
-        fontFamily: "var(--font-poppins)",
-      },
-    },
-  },
-  {
-    title: "Fun",
-    styles: {
-      preview: {
-        borderRadius: "20px",
-        boxShadow:
-          "0 48px 100px rgba(17, 12, 46, 0), inset 0 0 0 4px var(--b1)",
-      },
-      previewImage: {
-        background: "url('assets/img/webp/fun.webp') center / cover",
-        borderRadius: "20px",
-        boxShadow: "inset 0 0 0 4px var(--b1)",
-        transform: "scale(1.07)",
-        margin: "0 10px 0 9px",
-      },
-      content: {
-        fontFamily: "var(--font-livvic)",
-      },
-      button: {
-        borderRadius: "40px",
-        background: "0 0",
-        color: "var(--b1)",
-        border: "3px solid var(--b1)",
-        fontWeight: "700",
-        transition: ".2s ease",
-      },
-    },
-  },
-  {
-    title: "Modern",
-    styles: {
-      preview: {
-        borderRadius: "0",
-        boxShadow:
-          "0 48px 100px rgba(17, 12, 46, .1), inset 0 140px 0 var(--b2)",
-      },
-      previewImage: {
-        background: "url('assets/img/webp/modern.webp') center / cover",
-        borderRadius: "0",
-        boxShadow: "8px 8px 0 var(--b2)",
-        transform: "scale(.8) translateY(-15px)",
-      },
-      content: {
-        fontFamily: "var(--font-robotoMono)",
-      },
-      title: {
-        color: "var(--w1)",
-      },
-      button: {
-        borderRadius: "0",
-        textTransform: "uppercase",
-      },
-    },
-  },
-] as {
-  title: string;
-  styles: {
-    preview: CSSProperties;
-    previewImage: CSSProperties;
-    content: CSSProperties;
-    title?: CSSProperties;
-    button: CSSProperties;
-  };
-}[];
 
 export const tools = [
   {
-    name: "Photoshop",
-    blur: "#75b2df",
-    drop: "#0091ff70",
-    link: "https://www.adobe.com/products/photoshop.html",
+    name: "HTML",
+    blur: "#EF652A",
+    drop: "#E34F2670",
+    link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
   },
   {
-    name: "Illustrator",
-    blur: "#e04e39",
-    drop: "#ff620070",
-    link: "https://www.adobe.com/ca/products/illustrator.html",
+    name: "CSS",
+    blur: "#943BEE",
+    drop: "#943BEE70",
+    link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
   },
   {
-    name: "InDesign",
-    blur: "#fd4684",
-    drop: "#fd468470",
-    link: "https://www.adobe.com/ca/products/indesign.html",
+    name: "JavaScript",
+    blur: "#F7DF1E",
+    drop: "#F7C11E70",
+    link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
   },
   {
-    name: "Premiere Pro",
-    blur: "#6f53fc",
-    drop: "#6f53fc70",
-    link: "https://www.adobe.com/products/premiere.html",
+    name: "TypeScript",
+    blur: "#409BFF",
+    drop: "#409BFF70",
+    link: "https://www.typescriptlang.org",
   },
   {
-    name: "After Effects",
-    blur: "#6f53fc",
-    drop: "#6f53fc70",
-    link: "https://www.adobe.com/products/aftereffects.html",
+    name: "React",
+    blur: "#61DAFB",
+    drop: "#61DAFB70",
+    link: "https://react.dev",
   },
   {
-    name: "Lightroom",
-    blur: "#75b2df",
-    drop: "#0091ff70",
-    link: "https://www.adobe.com/ca/products/photoshop-lightroom.html",
+    name: "NextJS",
+    blur: "#FFFFFF70",
+    drop: "#FFFFFF70",
+    link: "https://nextjs.org",
   },
   {
-    name: "Adobe XD",
-    blur: "#fd4684",
-    drop: "#ff3bf270",
-    link: "https://www.adobe.com/products/xd.html",
+    name: "Electron",
+    blur: "#61DAFB70",
+    drop: "#61DAFB70",
+    link: "https://www.electronjs.org/pt/",
   },
   {
-    name: "Vegas Pro",
+    name: "Python",
     blur: "#4297ff",
     drop: "#4297ff70",
-    link: "https://www.vegascreativesoftware.com/us/vegas-pro/",
+    link: "https://www.python.org",
   },
   {
-    name: "Figma",
-    blur: "#75b2df",
-    drop: "#0091ff70",
-    link: "https://www.figma.com",
-  },
-  {
-    name: "Axure RP",
-    blur: "#75b2df",
+    name: "Django",
+    blur: "#FFFFFF70",
     drop: "#2be04070",
-    link: "https://www.axure.com",
+    link: "https://www.djangoproject.com",
   },
   {
-    name: "Coreldraw",
-    blur: "#75b2df",
-    drop: "#ffef0070",
-    link: "https://www.coreldraw.com",
+    name: "PHP",
+    blur: "#FFFFFF",
+    drop: "#4297ff70",
+    link: "https://www.php.net",
   },
   {
-    name: "Davinci Resolve",
+    name: "WordPress",
     blur: "#75b2df",
+    drop: "#4297ff70",
+    link: "https://wordpress.com",
+  },
+  {
+    name: "WooCommerce",
+    blur: "#943BEE",
+    drop: "#943BEE70",
+    link: "https://woocommerce.com",
+  },
+  {
+    name: "Unity",
+    blur: "#FFFFFF70",
     drop: "#ffffff70",
-    link: "https://www.blackmagicdesign.com/products/davinciresolve/",
+    link: "https://unity.com",
+  },
+  {
+    name: "C_Sharp",
+    blur: "#943BEE",
+    drop: "#943BEE70",
+    link: "https://unity.com/how-to/programming-unity",
   },
 ];

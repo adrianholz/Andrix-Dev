@@ -104,7 +104,7 @@ export default function Footer({ type }: { type?: string }) {
         </div>
       </div>
       <div
-        className={`blur ${type ? type : "uxui"} active`}
+        className={`blur ${type ? type : "code"} active`}
         ref={(el) => {
           if (el && blurRefs.current) {
             blurRefs.current[0] = el;

@@ -1,12 +1,5 @@
 import "./globals.css";
-import {
-  poppins,
-  raleway,
-  lora,
-  livvic,
-  robotoMono,
-  vudotronic,
-} from "./fonts";
+import { poppins, chakraPetch, vudotronic, sourceCode } from "./fonts";
 import Transition from "../components/ui/Transition";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
@@ -19,7 +12,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${poppins.variable} ${raleway.variable} ${lora.variable} ${livvic.variable} ${robotoMono.variable} ${vudotronic.variable}`}
+      className={`${poppins.variable} ${chakraPetch.variable} ${sourceCode.variable} ${vudotronic.variable}`}
     >
       <body>
         <Transition />

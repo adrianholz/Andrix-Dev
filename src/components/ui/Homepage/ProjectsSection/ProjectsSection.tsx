@@ -1,15 +1,17 @@
 import Link from "next/link";
 import Heading from "../Heading/Heading";
 import "./ProjectsSection.css";
-import React, { useRef } from "react";
+import React, { useContext, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import "swiper/css/pagination";
 import "swiper/css";
 import { projects } from "../../../../data/projects-data";
+import { ServiceContext } from "@/app/ServiceContext";
 
 export default function ProjectsSection() {
   const projectRefs = useRef<HTMLDivElement[]>([]);
+  const { blurRefs } = useContext(ServiceContext)!;
 
   function handleClick(index: number) {
     projectRefs.current[index].classList.toggle("active");
@@ -34,8 +36,10 @@ export default function ProjectsSection() {
       <div className="projects-inner">
         <Swiper
           modules={[Pagination]}
-          pagination={true}
+          spaceBetween={50}
           speed={800}
+          slidesPerView="auto"
+          centeredSlides
           grabCursor={true}
         >
           {projects.slice(0, 5).map((project, index) => {
@@ -77,7 +81,7 @@ export default function ProjectsSection() {
                   </div>
                   <div className="info">
                     <div className="title">
-                      <h3 style={project.title.styleLight}>
+                      <h3 style={project.title.styleDark}>
                         {project.title.name}
                         {project.title.secondName ? (
                           <span>{project.title.secondName}</span>
@@ -90,20 +94,6 @@ export default function ProjectsSection() {
                       </div>
                     </div>
                     <div className="details">
-                      <div className="colors">
-                        <span>Color Palette</span>
-                        <div className="boxes">
-                          {project.colors.map((color, index) => (
-                            <div
-                              key={index}
-                              style={{ background: `#${color.color}` }}
-                              data-value={`#${color.color}`}
-                              data-background={`#${color.color}`}
-                              data-color={`#${color.font}`}
-                            ></div>
-                          ))}
-                        </div>
-                      </div>
                       <div className="technologies">
                         <div>
                           <span>Technologies</span>
@@ -111,7 +101,7 @@ export default function ProjectsSection() {
                             {project.technologies.map((technology, index) => (
                               <div key={index} data-value={`${technology}`}>
                                 <img
-                                  src={`/assets/img/svg/tech-${technology
+                                  src={`/assets/img/svg/${technology
                                     .toLowerCase()
                                     .replaceAll(" ", "-")}.svg`}
                                   alt=""
@@ -135,6 +125,14 @@ export default function ProjectsSection() {
         </Swiper>
       </div>
       <Link href="/projects">View all of Andrix's projects</Link>
+      <div
+        className="blur code active"
+        ref={(el) => {
+          if (el && blurRefs.current) {
+            blurRefs.current[7] = el;
+          }
+        }}
+      ></div>
     </section>
   );
 }

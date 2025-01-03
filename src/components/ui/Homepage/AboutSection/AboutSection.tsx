@@ -44,10 +44,10 @@ export default function AboutSection() {
           </div>
         </div>
         <div
-          className="blur uxui active"
+          className="blur code active"
           ref={(el) => {
             if (el && blurRefs.current) {
-              blurRefs.current[2] = el;
+              blurRefs.current[6] = el;
             }
           }}
         ></div>

@@ -14,7 +14,8 @@ type ServiceContextTypes = {
   blurRefs: RefObject<HTMLDivElement[]>;
   imageRefs: MutableRefObject<HTMLElement[]>;
   titleRefs: MutableRefObject<HTMLElement[]>;
-  videoRef: RefObject<HTMLDivElement>;
+  typewriterRef: MutableRefObject<any>;
+  serviceTypewriterRef: MutableRefObject<any>;
   handleTitleChange: (arg: Service) => void;
 };
 
@@ -32,20 +33,50 @@ export const ServiceContextProvider = ({
   const blurRefs = useRef<HTMLDivElement[]>([]);
   const imageRefs = useRef<HTMLElement[]>([]);
   const titleRefs = useRef<HTMLElement[]>([]);
-  const videoRef = useRef<HTMLDivElement>(null);
+  const typewriterRef = useRef<any>(null);
+  const serviceTypewriterRef = useRef<any>(null);
 
   function handleTitleChange(service: Service) {
+    const typewriter = typewriterRef.current;
+    const serviceTypewriter = serviceTypewriterRef.current;
+    if (typewriter) {
+      typewriter
+        .deleteAll(30)
+        .changeDelay(100)
+        .typeString(service.name.split(" ")[0] + "<br>")
+        .typeString(service.name.split(" ")[1])
+        .start();
+    }
+    if (serviceTypewriter) {
+      serviceTypewriter
+        .callFunction(() => {
+          const elements = document.querySelectorAll(
+            ".terminal-inner video, .terminal-inner img"
+          );
+          elements.forEach((el) => el.classList.remove("active"));
+        })
+        .deleteAll(3)
+        .changeDelay(40)
+        .typeString("<h2>" + service.name + "</h2>" + "<br><br>")
+        .changeDelay(10)
+        .typeString("<p>" + service.description + "</p>")
+        .callFunction(() => {
+          const elements = document.querySelectorAll(
+            ".terminal-inner video, .terminal-inner img"
+          );
+          elements.forEach((el) => el.classList.add("active"));
+        })
+        .start();
+    }
+
     services.forEach((item, index) => {
       if (item.file === service.file) {
         setActiveIndex(index);
       }
     });
-    const video = videoRef.current?.children[0] as HTMLVideoElement;
     blurRefs.current.forEach((item) => {
       item.classList.remove("active");
     });
-    videoRef.current?.classList.add("active");
-    video.play();
     imageRefs.current.forEach((image, index) => {
       image.style.pointerEvents = "none";
       if (index >= 6) {
@@ -80,10 +111,7 @@ export const ServiceContextProvider = ({
           image.style.opacity = "1";
         }
       });
-    }, 2000);
-    setTimeout(() => {
-      videoRef.current?.classList.remove("active");
-    }, 1300);
+    }, 3000);
   }
 
   return (
@@ -94,7 +122,8 @@ export const ServiceContextProvider = ({
         blurRefs,
         imageRefs,
         titleRefs,
-        videoRef,
+        typewriterRef,
+        serviceTypewriterRef,
         handleTitleChange,
       }}
     >

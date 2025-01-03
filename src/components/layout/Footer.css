@@ -6,7 +6,8 @@ footer {
   z-index: 2;
   overflow: hidden;
   .footer-content {
-    font-family: "Poppins", sans-serif;
+    font-family: var(--font-chakra-petch);
+    font-weight: 400;
     display: grid;
     grid-template-columns: 0.75fr 1fr 1fr;
     gap: 20px;
@@ -65,7 +66,7 @@ footer {
     ul {
       display: flex;
       flex-direction: column;
-      gap: 10px;
+      gap: 15px;
       li {
         a,
         p {
@@ -92,6 +93,7 @@ footer {
   }
   .copyright {
     padding: 120px 20px 80px 20px;
+    font-weight: 400;
   }
   .blur {
     bottom: -100px;

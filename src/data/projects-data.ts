@@ -18,10 +18,11 @@ export const projects = [
         WebkitBackgroundClip: "text",
         WebkitTextFillColor: "transparent",
         letterSpacing: "3px",
+        marginBottom: "19px",
       },
     },
     description: [
-      "The Retroverse aims to be the most usable and thought out front-end experience for retrogaming libraries.",
+      "The Retroverse aims to be the most usable and thought out front-end experience for retrogaming libraries. libraries. libraries.",
       "The interface offers support for over 50 retro consoles, including Nintendo, Sega, PlayStation, Atari, and many more.",
     ],
     scale: "Major Project",
@@ -35,7 +36,7 @@ export const projects = [
       { color: "232323", font: "FFFFFF" },
       { color: "FFFFFF", font: "161616" },
     ],
-    technologies: ["Figma", "Photoshop", "Premiere Pro"],
+    technologies: ["JavaScript", "React", "Electron"],
     page: [
       {
         title: "HeroSection",
@@ -120,7 +121,7 @@ export const projects = [
       { color: "47C8F3", font: "FFFFFF" },
       { color: "1E37B8", font: "FFFFFF" },
     ],
-    technologies: ["Figma", "Photoshop", "Illustrator"],
+    technologies: ["CSS", "PHP", "WordPress"],
     page: [
       {
         title: "HeroSection",
@@ -177,7 +178,7 @@ export const projects = [
       { color: "FAC637", font: "161616" },
       { color: "B6F492", font: "161616" },
     ],
-    technologies: ["Figma", "Photoshop", "Lightroom"],
+    technologies: ["HTML", "CSS"],
     page: [
       {
         title: "HeroSection",
@@ -233,7 +234,7 @@ export const projects = [
       { color: "664400", font: "FFFFFF" },
       { color: "332200", font: "FFFFFF" },
     ],
-    technologies: ["Figma", "Adobe XD", "Photoshop"],
+    technologies: ["HTML", "CSS", "JavaScript"],
     page: [
       {
         title: "HeroSection",

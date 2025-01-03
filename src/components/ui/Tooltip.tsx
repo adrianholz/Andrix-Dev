@@ -8,8 +8,6 @@ interface TooltipData {
   content: string;
   top: number;
   left: number;
-  background: string;
-  color: string;
 }
 
 export default function Tooltip() {
@@ -18,8 +16,6 @@ export default function Tooltip() {
     content: "",
     top: 0,
     left: 0,
-    background: "",
-    color: "",
   });
 
   useEffect(() => {
@@ -77,10 +73,6 @@ export default function Tooltip() {
         style={{
           top: tooltipData.top,
           left: tooltipData.left,
-          background: tooltipData.background
-            ? tooltipData.background
-            : "#161616",
-          color: tooltipData.color ? tooltipData.color : "#FFFFFF",
         }}
       >
         <p>{tooltipData.content}</p>

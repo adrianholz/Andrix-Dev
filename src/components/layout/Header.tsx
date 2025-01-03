@@ -56,71 +56,73 @@ export default function Header({ type }: { type?: string }) {
   return (
     <>
       <header>
-        <div className="container">
-          <TransitionLink name="Home" href="/">
-            <Image
-              src="/assets/img/svg/Andrix.svg"
-              width={100}
-              height={78}
-              alt="Andrix Logo"
-            />
-          </TransitionLink>
+        <div>
+          <div className="container">
+            <TransitionLink name="Home" href="/">
+              <Image
+                src="/assets/img/svg/Andrix.svg"
+                width={100}
+                height={78}
+                alt="Andrix Logo"
+              />
+            </TransitionLink>
 
-          <nav
-            className={`
+            <nav
+              className={`
               ${disableTransition ? "no-transition" : ""}
               ${menu ? "mobile-active" : ""}
             `}
-          >
-            <ul ref={navRef}>
-              <li>
-                <TransitionLink name="Home" href="/">
-                  Home
-                </TransitionLink>
-              </li>
-              <li>
-                <TransitionLink name="Projects" href="/projects">
-                  Projects
-                </TransitionLink>
-              </li>
-              <li>
-                <TransitionLink name="About me" href="/about">
-                  About me
-                </TransitionLink>
-              </li>
-              <li>
-                <TransitionLink name="News" href="/news">
-                  News
-                </TransitionLink>
-              </li>
-              <li>
-                <p onClick={() => setContact(true)}>Contact</p>
-              </li>
-            </ul>
-          </nav>
+            >
+              <ul ref={navRef}>
+                <li>
+                  <TransitionLink name="Home" href="/">
+                    Home
+                  </TransitionLink>
+                </li>
+                <li>
+                  <TransitionLink name="Projects" href="/projects">
+                    Projects
+                  </TransitionLink>
+                </li>
+                <li>
+                  <TransitionLink name="About me" href="/about">
+                    About me
+                  </TransitionLink>
+                </li>
+                <li>
+                  <TransitionLink name="News" href="/news">
+                    News
+                  </TransitionLink>
+                </li>
+                <li>
+                  <p onClick={() => setContact(true)}>Contact</p>
+                </li>
+              </ul>
+            </nav>
 
-          <a
-            href="/assets/files/pdf/Adrian Holzschuh Resume.pdf"
-            target="_blank"
-            className="resume"
-          >
-            <img src="/assets/img/svg/resume.svg" alt="Resume" />
-            <p>Resume</p>
-            <div
-              className={`blur ${type ? type : "uxui"} active`}
-              ref={(el) => {
-                if (el && blurRefs.current) {
-                  blurRefs.current[4] = el;
-                }
-              }}
-            ></div>
-          </a>
+            <a
+              href="/assets/files/pdf/Adrian Holzschuh Resume.pdf"
+              target="_blank"
+              className="resume"
+            >
+              <img src="/assets/img/svg/resume.svg" alt="Resume" />
+              <p>Resume</p>
+              <div
+                className={`blur ${type ? type : "code"} active`}
+                ref={(el) => {
+                  if (el && blurRefs.current) {
+                    blurRefs.current[1] = el;
+                  }
+                }}
+              ></div>
+            </a>
 
-          <button
-            className="mobile-menu"
-            onClick={() => setMenu(true)}
-            aria-label="Menu"
-          ></button>
+            <button
+              className="mobile-menu"
+              onClick={() => setMenu(true)}
+              aria-label="Menu"
+            ></button>
+          </div>
         </div>
       </header>
 
@@ -189,7 +191,7 @@ export default function Header({ type }: { type?: string }) {
               data-atropos-offset="-5"
             />
             <div
-              className={`blur ${type ? type : "uxui"} active`}
+              className={`blur ${type ? type : "code"} active`}
               data-atropos-offset="-5"
               ref={(el) => {
                 if (el && blurRefs.current) {

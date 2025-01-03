@@ -1,4 +1,4 @@
-import { Livvic, Lora, Poppins, Raleway, Roboto_Mono } from "next/font/google";
+import { Chakra_Petch, Poppins, Source_Code_Pro } from "next/font/google";
 import localFont from "next/font/local";
 
 export const poppins = Poppins({
@@ -9,32 +9,18 @@ export const poppins = Poppins({
   display: "swap",
 });
 
-export const raleway = Raleway({
-  weight: ["200", "400", "500", "600", "700", "800", "900"],
-  style: ["normal", "italic"],
+export const chakraPetch = Chakra_Petch({
+  weight: ["300", "400", "500", "600", "700"],
+  style: ["normal"],
   subsets: ["latin"],
-  variable: "--font-raleway",
+  variable: "--font-chakra-petch",
   display: "swap",
 });
 
-export const lora = Lora({
-  weight: ["500", "600"],
+export const sourceCode = Source_Code_Pro({
+  weight: ["400", "500", "600"],
   subsets: ["latin"],
-  variable: "--font-lora",
-  display: "swap",
-});
-
-export const livvic = Livvic({
-  weight: ["500", "600", "700"],
-  subsets: ["latin"],
-  variable: "--font-livvic",
-  display: "swap",
-});
-
-export const robotoMono = Roboto_Mono({
-  weight: ["500"],
-  subsets: ["latin"],
-  variable: "--font-robotoMono",
+  variable: "--font-sourceCode",
   display: "swap",
 });
 
