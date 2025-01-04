@@ -30,23 +30,23 @@ export default function Marquee({
         className="marquee-content"
         style={reverse ? { animationDirection: "reverse" } : {}}
       >
-        <span>{page} • </span>
-        <span>{title} • </span>
-        <span>{page} • </span>
-        <span>{title} • </span>
-        <span>{page} • </span>
-        <span>{title} • </span>
+        <span>{page} ▪ </span>
+        <span>{title} ▪ </span>
+        <span>{page} ▪ </span>
+        <span>{title} ▪ </span>
+        <span>{page} ▪ </span>
+        <span>{title} ▪ </span>
       </div>
       <div
         className="marquee-content"
         style={reverse ? { animationDirection: "reverse" } : {}}
       >
-        <span>{page} • </span>
-        <span>{title} • </span>
-        <span>{page} • </span>
-        <span>{title} • </span>
-        <span>{page} • </span>
-        <span>{title} • </span>
+        <span>{page} ▪ </span>
+        <span>{title} ▪ </span>
+        <span>{page} ▪ </span>
+        <span>{title} ▪ </span>
+        <span>{page} ▪ </span>
+        <span>{title} ▪ </span>
       </div>
     </div>
   );

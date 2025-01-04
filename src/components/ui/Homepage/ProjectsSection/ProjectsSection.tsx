@@ -98,16 +98,18 @@ export default function ProjectsSection() {
                         <div>
                           <span>Technologies</span>
                           <div className="icons">
-                            {project.technologies.map((technology, index) => (
-                              <div key={index} data-value={`${technology}`}>
-                                <img
-                                  src={`/assets/img/svg/${technology
-                                    .toLowerCase()
-                                    .replaceAll(" ", "-")}.svg`}
-                                  alt=""
-                                />
-                              </div>
-                            ))}
+                            {project.technologies
+                              .slice(0, 3)
+                              .map((technology, index) => (
+                                <div key={index} data-value={`${technology}`}>
+                                  <img
+                                    src={`/assets/img/svg/${technology
+                                      .toLowerCase()
+                                      .replaceAll(" ", "-")}.svg`}
+                                    alt=""
+                                  />
+                                </div>
+                              ))}
                           </div>
                         </div>
                         <Link href={`/projects/${slug}`}>View Project</Link>

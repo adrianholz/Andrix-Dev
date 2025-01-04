@@ -34,7 +34,7 @@ export default function TransitionLink({
     transition?.classList.add("active");
     await sleep(300);
     router.push(href);
-    await sleep(700);
+    await sleep(900);
     transition?.classList.remove("active");
   };
 

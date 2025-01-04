@@ -50,10 +50,10 @@
       background: var(--b1);
     }
     &::-webkit-scrollbar-thumb {
-      background: #aaa;
+      background: #454545;
     }
     &::-webkit-scrollbar-thumb:hover {
-      background: #cecece;
+      background: var(--w1);
     }
   }
   .education-card {

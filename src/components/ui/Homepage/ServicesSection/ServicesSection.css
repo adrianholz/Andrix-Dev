@@ -160,7 +160,7 @@
       gap: 20px;
       padding: 10px 20px;
       cursor: pointer;
-      transition: 0.2s ease;
+      transition: 0.3s ease;
       &:hover,
       &.active {
         border: 1px solid rgba(255, 255, 255, 0.75);
@@ -233,10 +233,10 @@
         background: var(--b1);
       }
       &::-webkit-scrollbar-thumb {
-        background: #aaa;
+        background: #454545;
       }
       &::-webkit-scrollbar-thumb:hover {
-        background: #cecece;
+        background: var(--w1);
       }
       .service-icon {
         min-width: 200px;

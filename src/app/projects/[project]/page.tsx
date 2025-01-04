@@ -7,9 +7,10 @@ import Footer from "../../../components/layout/Footer";
 import Header from "../../../components/layout/Header";
 import Marquee from "../../../components/ui/Marquee";
 import DescriptionSection from "../../../components/ui/Project/DescriptionSection/DescriptionSection";
-import DesignSection from "../../../components/ui/Project/DesignSection/DesignSection";
+import TechnologySection from "../../../components/ui/Project/TechnologySection/TechnologySection";
 import HeroSection from "../../../components/ui/Project/HeroSection/HeroSection";
 import MetaSection from "../../../components/ui/Project/MetaSection/MetaSection";
+import "../../../components/ui/Project/Project.css";
 import Tooltip from "../../../components/ui/Tooltip";
 import { projects } from "../../../data/projects-data";
 import { CSSProperties, use } from "react";
@@ -63,59 +64,60 @@ export default function Project({
           />
           <Header type={projectData.type} />
           <Tooltip />
-          {projectData.page?.map((component, index) => {
-            if (component.title === "HeroSection") {
-              return (
-                <HeroSection
-                  key={index}
-                  title={projectData.title.name}
-                  secondTitle={projectData.title.secondName!}
-                  style={projectData.title.styleDark as CSSProperties}
-                  video={projectData.video}
-                  preview={projectData.preview}
-                  description={component.description}
-                  {...("call" in component && { call: component.call })}
-                />
-              );
-            }
-            if (component.title === "MetaSection") {
-              return (
-                <MetaSection
-                  scale={projectData.scale}
-                  objective={component.objective!}
-                  duration={component.duration!}
-                  status={component.status!}
-                  key={index}
-                />
-              );
-            }
-            if (component.title === "DescriptionSection") {
-              return (
-                <DescriptionSection
-                  key={index}
-                  heading={component.heading}
-                  theme={component.theme!}
-                  position={component.position!}
-                  video={component.video!}
-                  {...("videoStyle" in component && {
-                    videoStyle: component.videoStyle,
-                  })}
-                  animation={component.animation!}
-                  preview={component.preview!}
-                  text={component.text!}
-                />
-              );
-            }
-            if (component.title === "DesignSection") {
-              return (
-                <DesignSection
-                  key={index}
-                  colors={projectData.colors}
-                  technologies={projectData.technologies}
-                />
-              );
-            }
-          })}
+          <div className="project-page">
+            {projectData.page?.map((component, index) => {
+              if (component.title === "HeroSection") {
+                return (
+                  <HeroSection
+                    key={index}
+                    title={projectData.title.name}
+                    secondTitle={projectData.title.secondName!}
+                    style={projectData.title.styleDark as CSSProperties}
+                    video={projectData.video}
+                    preview={projectData.preview}
+                    description={component.description}
+                    {...("call" in component && { call: component.call })}
+                  />
+                );
+              }
+              if (component.title === "MetaSection") {
+                return (
+                  <MetaSection
+                    scale={projectData.scale}
+                    objective={component.objective!}
+                    duration={component.duration!}
+                    status={component.status!}
+                    key={index}
+                  />
+                );
+              }
+              if (component.title === "DescriptionSection") {
+                return (
+                  <DescriptionSection
+                    key={index}
+                    heading={component.heading}
+                    theme={component.theme!}
+                    position={component.position!}
+                    video={component.video!}
+                    {...("videoStyle" in component && {
+                      videoStyle: component.videoStyle,
+                    })}
+                    animation={component.animation!}
+                    preview={component.preview!}
+                    text={component.text!}
+                  />
+                );
+              }
+              if (component.title === "TechnologySection") {
+                return (
+                  <TechnologySection
+                    key={index}
+                    technologies={projectData.technologies}
+                  />
+                );
+              }
+            })}
+          </div>
           <Footer type={projectData.type} />
           <Marquee
             gap="10px"

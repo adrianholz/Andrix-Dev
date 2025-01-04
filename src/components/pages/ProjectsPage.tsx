@@ -15,9 +15,11 @@ export default function ProjectsPage() {
 
   return (
     <main className="projects-page">
-      <div className="container">
-        <Filters setTags={setTags} />
-        <Projects tags={tags} />
+      <div>
+        <div className="container">
+          <Filters setTags={setTags} />
+          <Projects tags={tags} />
+        </div>
       </div>
     </main>
   );

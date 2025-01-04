@@ -9,18 +9,16 @@
     max-width: fit-content;
     padding: 20px 40px;
     border-radius: 20px 20px 0 0;
-    background: var(--b1);
     color: var(--w1);
   }
   > div {
-    background: var(--b2);
-    max-height: 763.93px;
+    max-height: 713.175px;
     min-height: 444.6px;
     height: 100%;
     width: 100%;
     max-width: 100%;
-    border-radius: 0 20px 20px 0;
-    box-shadow: 0 18px 50px -10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 2px 0 rgba(255, 255, 255, 0.15) inset;
+    background: rgba(0, 0, 0, 0.05);
     padding: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -46,10 +44,11 @@
   }
   .project-entry {
     height: max-content;
-    border-radius: 20px;
-    background: var(--b1);
+    box-shadow: 0 1px 2px 0 rgba(255, 255, 255, 0.15) inset;
+    background: rgba(0, 0, 0, 0.25);
     overflow: hidden;
     position: relative;
+    backdrop-filter: blur(10px);
     .project-entry-inner {
       padding: 20px;
       display: flex;
@@ -65,7 +64,6 @@
       max-height: 186px;
       object-fit: cover;
       object-position: top;
-      border-radius: 12px;
       border: none;
       transition: object-position 8s ease;
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -78,7 +76,9 @@
       right: -20px;
       bottom: -20px;
       opacity: 0.05;
-      max-width: 200px;
+      max-width: 240px;
+      max-height: 200px;
+      width: 100%;
       z-index: 1;
     }
     h3 {
@@ -121,6 +121,7 @@
       color: #aaa;
       font-size: 1rem;
       line-height: 1.5rem;
+      font-weight: 400;
     }
     .blur {
       z-index: 0;
@@ -165,7 +166,6 @@
       }
       &::-webkit-scrollbar-thumb {
         background: #454545;
-        border-radius: 15px;
       }
       &::-webkit-scrollbar-thumb:hover {
         background: var(--w1);

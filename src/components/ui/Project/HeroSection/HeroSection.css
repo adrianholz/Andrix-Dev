@@ -54,24 +54,20 @@
     gap: 20px 30px;
     margin-top: 20px;
     a {
-      border-radius: 20px;
-      background: linear-gradient(
-        to bottom right,
-        rgba(35, 35, 35, 0.65),
-        rgba(22, 22, 22, 0.45)
-      );
-      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 1px 2px 0 rgba(255, 255, 255, 0.15) inset;
+      background: rgba(0, 0, 0, 0.25);
+      border: 1px solid transparent;
       padding: 18px 36px;
       text-decoration: none;
       color: rgba(255, 255, 255, 0.6);
-      font-family: Poppins, sans-serif;
+      font-family: var(--font-chakra-petch);
       font-weight: 500;
       max-width: -moz-fit-content;
       max-width: fit-content;
-      transition-property: box-shadow, transform, opacity;
-      transition-duration: 0.2s, 0.2s, 0.2s;
+      transition: 0.3s ease;
       &:hover {
-        transform: scale(1.05);
+        border-color: var(--w1);
+        color: var(--w1);
       }
     }
   }

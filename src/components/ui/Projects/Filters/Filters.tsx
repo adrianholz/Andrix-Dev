@@ -55,7 +55,7 @@ export default function Filters({
           {services.map((service, index) => (
             <Filter
               key={index}
-              file={`${service.file}-dark`}
+              file={`${service.file}`}
               name={service.name}
               short={service.short}
               onSelect={() => handleAddTag("category", service.file)}
@@ -67,7 +67,7 @@ export default function Filters({
           {tools.map((tool, index) => (
             <Filter
               key={index}
-              file={`tech-${tool.name.toLowerCase().replaceAll(" ", "-")}`}
+              file={`${tool.name.toLowerCase().replaceAll(" ", "-")}`}
               name={tool.name}
               short={tool.name}
               onSelect={() => handleAddTag("technology", tool.name)}

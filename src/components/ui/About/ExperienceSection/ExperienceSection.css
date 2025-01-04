@@ -18,7 +18,7 @@
     text-transform: uppercase;
     margin: 0 auto;
     text-align: center;
-    padding: 20px 40px;
+    padding: 20px 40px 19px 40px;
     color: var(--w1);
   }
   > div {
@@ -46,10 +46,10 @@
       background: var(--b1);
     }
     &::-webkit-scrollbar-thumb {
-      background: #aaa;
+      background: #454545;
     }
     &::-webkit-scrollbar-thumb:hover {
-      background: #cecece;
+      background: var(--w1);
     }
   }
   .experience-card {

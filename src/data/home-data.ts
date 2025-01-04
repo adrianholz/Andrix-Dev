@@ -2,7 +2,7 @@ export const services = [
   {
     name: "Website Development",
     file: "website",
-    short: "Web Dev",
+    short: "Website",
     description:
       "Leverage the power of colors, typography, spacing and form to create the experience you desire for your users. Every single element and detail of your interface should have intention and purpose. So let's make them count.",
     process:
@@ -22,7 +22,7 @@ export const services = [
   {
     name: "Web-based Applications",
     file: "code",
-    short: "Brand",
+    short: "Web App",
     description:
       "Communication is key. By defining rules and foundations for designing your company's projects, we convey your ideas, values, and purposes. Visual identity brings your brand to life and also enhances client relationship.",
     process:
@@ -32,7 +32,7 @@ export const services = [
   {
     name: "Desktop Applications",
     file: "desktop",
-    short: "Social",
+    short: "Desktop App",
     description:
       "The digital space couldn't get more crowded nowadays. An effective social media strategy means that you can engage and, most importantly, retain your audience. Reach out to your audience and communicate with confidence.",
     process:
@@ -42,7 +42,7 @@ export const services = [
   {
     name: "Game Development",
     file: "game",
-    short: "Packaging",
+    short: "Game",
     description:
       "Your products deserve the same love as your digital content. Packaging design is there to make sure that, besides being functional, your products stand out on the shelves and in your customers' minds.",
     process:

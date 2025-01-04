@@ -156,7 +156,7 @@ header {
   transition: opacity 0.3s ease;
   .card-inner {
     box-shadow: 0 1px 2px 0 rgba(255, 255, 255, 0.15) inset;
-    background: var(--b2);
+    background: #101010;
     position: relative;
     overflow: hidden;
     padding: 20px;
@@ -215,9 +215,11 @@ header {
         padding: 5px;
         box-shadow: 0 1px 2px 0 rgba(255, 255, 255, 0.15) inset;
         background: rgba(0, 0, 0, 0.125);
-        transition: transform 0.2s ease;
+        transition: 0.3s ease;
+        border: 1px solid transparent;
         &:hover {
           transform: scale(1.1);
+          border-color: var(--w1);
         }
       }
       img {
@@ -346,7 +348,7 @@ header {
         }
       }
       .resume {
-        padding: 12px 30px;
+        padding: 12px 20px;
         img {
           max-width: 25px;
           position: relative;

@@ -1,5 +1,5 @@
 .project-meta {
-  background: var(--b2);
+  background: rgba(0, 0, 0, 0.25);
   .container {
     display: flex;
     justify-content: start;
@@ -25,29 +25,16 @@
     > div {
       padding: 24px;
       min-width: 260px;
-      background: var(--b1);
-      border-radius: 12px;
+      box-shadow: 0 1px 2px 0 rgba(255, 255, 255, 0.15) inset;
+      background: rgba(0, 0, 0, 0.25);
+      backdrop-filter: blur(10px);
+      border: 1px solid transparent;
       color: var(--w1);
       text-transform: uppercase;
       text-align: center;
       display: flex;
       flex-direction: column;
       gap: 8px;
-      background-size: 112px;
-      background-repeat: no-repeat;
-      background-position: right;
-      &:nth-child(1) {
-        background-image: url("/assets/img/svg/scale.svg");
-      }
-      &:nth-child(2) {
-        background-image: url("/assets/img/svg/objective.svg");
-      }
-      &:nth-child(3) {
-        background-image: url("/assets/img/svg/duration.svg");
-      }
-      &:nth-child(4) {
-        background-image: url("/assets/img/svg/status.svg");
-      }
     }
     h2 {
       font-size: 1.5rem;

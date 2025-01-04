@@ -18,7 +18,6 @@ export const projects = [
         WebkitBackgroundClip: "text",
         WebkitTextFillColor: "transparent",
         letterSpacing: "3px",
-        marginBottom: "19px",
       },
     },
     description: [
@@ -29,14 +28,14 @@ export const projects = [
     video: true,
     videoStyle: {},
     preview: "/assets/video/retroverse.webm",
-    type: "uxui",
+    type: "code",
     colors: [
       { color: "000000", font: "FFFFFF" },
       { color: "161616", font: "FFFFFF" },
       { color: "232323", font: "FFFFFF" },
       { color: "FFFFFF", font: "161616" },
     ],
-    technologies: ["JavaScript", "React", "Electron"],
+    technologies: ["JavaScript", "React", "Electron", "HTML", "CSS"],
     page: [
       {
         title: "HeroSection",
@@ -96,6 +95,7 @@ export const projects = [
           "View your ROM's logos, screenshots, box art and video preview in interactive, stunning three-dimensional depth.",
         ],
       },
+      { title: "TechnologySection" },
     ],
   },
   {
@@ -113,7 +113,7 @@ export const projects = [
     scale: "Major Project",
     video: false,
     preview: "/assets/img/webp/dogresort.webp",
-    type: "uxui",
+    type: "website",
     colors: [
       { color: "97CA49", font: "FFFFFF" },
       { color: "FFA307", font: "FFFFFF" },
@@ -121,7 +121,7 @@ export const projects = [
       { color: "47C8F3", font: "FFFFFF" },
       { color: "1E37B8", font: "FFFFFF" },
     ],
-    technologies: ["CSS", "PHP", "WordPress"],
+    technologies: ["PHP", "WordPress", "CSS", "HTML"],
     page: [
       {
         title: "HeroSection",
@@ -152,7 +152,7 @@ export const projects = [
           "The color scheme reflects each one of the services, and the images/shapes were individually treated and designed.",
         ],
       },
-      { title: "DesignSection" },
+      { title: "TechnologySection" },
     ],
   },
   {
@@ -171,7 +171,7 @@ export const projects = [
     scale: "Minor Project",
     video: false,
     preview: "/assets/img/webp/nike.webp",
-    type: "uxui",
+    type: "desktop",
     colors: [
       { color: "FF8953", font: "161616" },
       { color: "F35356", font: "FFFFFF" },
@@ -209,7 +209,7 @@ export const projects = [
           "White space and animations are the particular elements that make this interface stand out.",
         ],
       },
-      { title: "DesignSection" },
+      { title: "TechnologySection" },
     ],
   },
   {
@@ -226,7 +226,7 @@ export const projects = [
     scale: "Minor Project",
     video: false,
     preview: "/assets/img/webp/bikcraft.webp",
-    type: "uxui",
+    type: "game",
     colors: [
       { color: "FFBB00", font: "161616" },
       { color: "E4A30B", font: "FFFFFF" },
@@ -279,7 +279,7 @@ export const projects = [
           "Special digital desaturation was applied to the product images in order for them to align with the grayscale interface.",
         ],
       },
-      { title: "DesignSection" },
+      { title: "TechnologySection" },
     ],
   },
   {
@@ -294,7 +294,7 @@ export const projects = [
     scale: "Major Project",
     video: false,
     preview: "/assets/img/webp/darkest.webp",
-    type: "artwork",
+    type: "ecommerce",
     colors: [
       { color: "FED93A", font: "161616" },
       { color: "83F1FB", font: "161616" },
@@ -344,7 +344,7 @@ export const projects = [
           "Darkest Dungeon is a game made by Red Hook Studios, released in january of 2016.",
         ],
       },
-      { title: "DesignSection" },
+      { title: "TechnologySection" },
     ],
   },
   {
@@ -758,7 +758,7 @@ export const projects = [
           "This was also the final project of Origamid's UX/UI for Beginners course.",
         ],
       },
-      { title: "DesignSection" },
+      { title: "TechnologySection" },
     ],
   },
   {
@@ -811,7 +811,7 @@ export const projects = [
           "This was the one I used before finally switching to Andrix Design.",
         ],
       },
-      { title: "DesignSection" },
+      { title: "TechnologySection" },
     ],
   },
   {
@@ -1334,7 +1334,7 @@ export const projects = [
           "It was made following the style guide previously provided, with primary colors of blue and white.",
         ],
       },
-      { title: "DesignSection" },
+      { title: "TechnologySection" },
     ],
   },
   {
@@ -1387,7 +1387,7 @@ export const projects = [
           "Each of the entries contain detailed descriptions and their chemical/physical properties, as well as high-quality images.",
         ],
       },
-      { title: "DesignSection" },
+      { title: "TechnologySection" },
     ],
   },
   {
@@ -1439,7 +1439,7 @@ export const projects = [
           "This website design was made with the color scheme of the association's logo.",
         ],
       },
-      { title: "DesignSection" },
+      { title: "TechnologySection" },
     ],
   },
   {
@@ -1492,7 +1492,7 @@ export const projects = [
           "The interface was supposed to replicate the feeling of entering the neigborhood, with signs and colors that are common in the area.",
         ],
       },
-      { title: "DesignSection" },
+      { title: "TechnologySection" },
     ],
   },
 
@@ -1540,7 +1540,7 @@ export const projects = [
           "The interface of the online store was made to showcase multiple products on the home screen, based on categories.",
         ],
       },
-      { title: "DesignSection" },
+      { title: "TechnologySection" },
     ],
   },
   {
@@ -1586,7 +1586,7 @@ export const projects = [
           "Dr. Ricardo is a veterinarian specialized in doTERRA aromatherapy. This website was created to showcase his case studies and to promote doTERRA essential oils and products.",
         ],
       },
-      { title: "DesignSection" },
+      { title: "TechnologySection" },
     ],
   },
 

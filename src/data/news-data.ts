@@ -4,7 +4,7 @@ export const news = [
     author: "Adrian H.",
     time: "1.5min",
     banner: "/assets/img/webp/logo.webp",
-    type: "uxui",
+    type: "code",
     sections: [
       {
         title: "ParagraphSection",
@@ -47,7 +47,7 @@ export const news = [
     author: "Adrian H.",
     time: "1.5min",
     banner: "/assets/img/webp/logo.webp",
-    type: "uxui",
+    type: "code",
     sections: [
       {
         title: "ParagraphSection",

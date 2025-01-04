@@ -102,9 +102,6 @@ ul {
 .blur.website {
   background-image: linear-gradient(to right, #0cf, #06f, #8000ff);
 }
-.blur.packaging {
-  background-image: linear-gradient(to right, #0aec61, #00d9ff, #0051ff);
-}
 .blur.game {
   background: linear-gradient(to right, #960af3, #f10b0b, #e98d0c);
 }
