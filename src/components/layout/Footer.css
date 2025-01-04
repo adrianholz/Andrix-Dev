@@ -56,6 +56,21 @@ footer {
       padding: 0;
       img {
         transition: 0.2s ease;
+        -webkit-mask-image: linear-gradient(
+          to bottom right,
+          rgba(0, 0, 0, 1) 0%,
+          rgba(0, 0, 0, 0.5) 100%
+        );
+        mask-image: linear-gradient(
+          to bottom right,
+          rgba(0, 0, 0, 1) 0%,
+          rgba(0, 0, 0, 0.5) 100%
+        );
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+
+        -webkit-mask-size: cover;
+        mask-size: cover;
         &:hover {
           transform: scale(1.1);
         }

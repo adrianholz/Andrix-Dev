@@ -1,32 +1,40 @@
 .education {
   padding: 120px 0 180px 0;
-  margin-bottom: -60px;
-  background: url("/assets/img/webp/bg-paper.webp") center top / cover no-repeat;
+  margin-bottom: -63px;
+  background: var(--b2);
+  position: relative;
+  z-index: 0;
+  .blur {
+    z-index: 0;
+    width: 800px;
+    height: 300px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
   h1 {
+    background: rgba(0, 0, 0, 0.25);
     font-size: 1.125rem;
     letter-spacing: 0.3rem;
     text-transform: uppercase;
     margin: 0 auto;
-    max-width: fit-content;
     padding: 20px 40px;
-    border-radius: 20px 20px 0 0;
+    text-align: center;
     font-weight: 700;
-    color: var(--b1);
-    background: linear-gradient(
-      rgba(206, 206, 206, 0.8),
-      rgba(206, 206, 206, 0.3)
-    );
-    box-shadow: 0 18px 50px -10px rgba(0, 0, 0, 0.2);
+    color: var(--w1);
   }
   > div {
-    background: linear-gradient(
-      180deg,
-      rgba(206, 206, 206, 0.3) 0,
-      rgba(206, 206, 206, 0) 100%
-    );
-    box-shadow: 0 48px 100px 0 rgba(17, 12, 46, 0.15);
+    box-shadow: 0 1px 2px 0 rgba(255, 255, 255, 0.15) inset;
+    background: var(--b2);
+    > div {
+      background: rgba(0, 0, 0, 0.25);
+    }
   }
   .education-container {
+    position: relative;
+    z-index: 1;
     margin: 0 auto;
     max-width: fit-content;
     padding: 40px 20px;
@@ -39,28 +47,21 @@
       height: 8px;
     }
     &::-webkit-scrollbar-track {
-      background: #cecece;
+      background: var(--b1);
     }
     &::-webkit-scrollbar-thumb {
       background: #aaa;
-      border-radius: 15px;
     }
     &::-webkit-scrollbar-thumb:hover {
-      background: var(--b1);
+      background: #cecece;
     }
   }
   .education-card {
-    background: linear-gradient(
-      180deg,
-      rgba(206, 206, 206, 0.25) 0,
-      rgba(206, 206, 206, 0) 100%
-    );
-    box-shadow: 0 0 0 rgba(17, 17, 26, 0.1), 0 0 12px rgba(17, 17, 26, 0.1),
-      0 0 24px rgba(17, 17, 26, 0.1);
-    color: var(--b2);
+    box-shadow: 0 1px 2px 0 rgba(255, 255, 255, 0.15) inset;
+    background: rgba(0, 0, 0, 0.25);
+    color: var(--w1);
     box-sizing: content-box;
     padding: 40px 25px;
-    border-radius: 20px;
     min-width: 300px;
     max-width: 300px;
     a {
@@ -103,8 +104,8 @@
     }
     p {
       line-height: 2rem;
-      color: var(--b1);
-      font-weight: 600;
+      color: #aaa;
+      font-weight: 400;
     }
   }
 }

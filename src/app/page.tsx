@@ -18,7 +18,7 @@ export default function Home() {
       <Marquee
         gap="10px"
         page="Homepage"
-        title="Andrix Design"
+        title="Andrix Development"
         time="30s"
         reverse={false}
       />
@@ -32,7 +32,7 @@ export default function Home() {
       <Marquee
         gap="10px"
         page="Homepage"
-        title="Andrix Design"
+        title="Andrix Development"
         time="30s"
         reverse={true}
       />

@@ -38,7 +38,7 @@ export default function Post({ params }: { params: Promise<PostParams> }) {
           <Marquee
             gap="10px"
             page={postData.title}
-            title="Andrix Design"
+            title="Andrix Development"
             time="30s"
             reverse={false}
           />
@@ -115,7 +115,7 @@ export default function Post({ params }: { params: Promise<PostParams> }) {
           <Marquee
             gap="10px"
             page={postData.title}
-            title="Andrix Design"
+            title="Andrix Development"
             time="30s"
             reverse={true}
           />

@@ -1,79 +1,81 @@
 .about-me {
-  background: url("/assets/img/webp/bg-paper.webp") center top / cover no-repeat;
-  padding: 120px 20px 180px 20px;
-  margin-bottom: -60px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: repeat;
+  background-color: #131313;
+  padding: 120px 0 180px 0;
+  margin-bottom: -63px;
+  > div {
+    background: rgba(0, 0, 0, 0.15);
+    position: relative;
+    .blur {
+      z-index: 0;
+      width: 500px;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+  }
   .container {
     display: flex;
+    position: relative;
+    z-index: 1;
   }
   h1 {
     font-size: 1.125rem;
     letter-spacing: 0.3rem;
     text-transform: uppercase;
     margin: 0 auto;
-    max-width: fit-content;
+    text-align: center;
     padding: 20px 40px;
-    border-radius: 20px 20px 0 0;
     font-weight: 700;
-    color: var(--b1);
-    background: linear-gradient(
-      rgba(206, 206, 206, 0.8),
-      rgba(206, 206, 206, 0.3)
-    );
-    box-shadow: 0 18px 50px -10px rgba(0, 0, 0, 0.2);
+    color: var(--w1);
   }
   .summary {
     max-width: 700px;
     .info {
       box-sizing: border-box;
       padding: 40px;
-      background: linear-gradient(
-        180deg,
-        rgba(206, 206, 206, 0.5) 0,
-        rgba(206, 206, 206, 0) 100%
-      );
-      border-radius: 20px 0 0 20px;
-      box-shadow: 0 1px 0 rgba(17, 17, 26, 0.1),
-        0 8px 24px rgba(17, 17, 26, 0.1), 0 16px 48px rgba(17, 17, 26, 0.1);
+      box-shadow: 0 1px 2px 0 rgba(255, 255, 255, 0.15) inset;
+      background: rgba(0, 0, 0, 0.05);
       height: 100%;
-      max-height: 663px;
+      max-height: 649.2px;
       > p {
         padding: 30px 40px 0 0;
         line-height: 2rem;
-        font-weight: 600;
+        font-weight: 400;
+        color: #aaa;
+        strong {
+          color: var(--w1);
+        }
       }
     }
     .quote {
       display: flex;
-      box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1),
-        0 10px 10px rgba(0, 0, 0, 0.04);
-      border-radius: 20px;
       img {
-        min-width: 230px;
-        border-radius: 20px 0 0 20px;
+        width: 100%;
+        max-width: 180px;
+        height: 180px;
       }
       div {
-        background: linear-gradient(
-          180deg,
-          rgba(206, 206, 206, 0.5) 0,
-          rgba(206, 206, 206, 0) 100%
-        );
-        border-radius: 0 20px 20px 0;
+        box-shadow: 0 1px 2px 0 rgba(255, 255, 255, 0.15) inset;
+        background: rgba(0, 0, 0, 0.25);
       }
       span {
-        color: var(--b2);
+        color: var(--w1);
         font-weight: 700;
         font-size: 1.125rem;
         display: block;
         width: 100%;
         box-sizing: border-box;
-        padding: 15px 20px;
-        border-radius: 0 20px 0 0;
-        box-shadow: 0 6px 12px -2px rgba(0, 0, 0, 0.15);
+        padding: 15px 20px 0 20px;
       }
       p {
-        color: var(--b1);
+        color: #aaa;
         font-size: 1.125rem;
-        font-weight: 600;
+        font-weight: 400;
         line-height: 1.875rem;
         padding: 15px 80px 15px 20px;
         box-sizing: border-box;
@@ -85,20 +87,14 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    h1 {
-      background: var(--b1);
-      color: var(--w1);
-    }
     .information-inner {
       padding: 40px;
       color: var(--w1);
-      background: var(--b2);
-      border-radius: 0 20px 20px 0;
+      box-shadow: 0 1px 2px 0 rgba(255, 255, 255, 0.15) inset;
+      background: rgba(0, 0, 0, 0.05);
       display: flex;
       flex-direction: column;
       gap: 20px;
-      box-shadow: 0 1px 0 rgba(17, 17, 26, 0.1),
-        0 8px 24px rgba(17, 17, 26, 0.1), 0 16px 48px rgba(17, 17, 26, 0.1);
       span {
         font-size: 1rem;
         text-transform: uppercase;
@@ -107,7 +103,7 @@
         display: block;
       }
       p {
-        font-family: Poppins, sans-serif;
+        font-family: var(--font-chakra-petch);
         font-weight: 600;
         margin-top: 2px;
         font-size: 1.125rem;
@@ -115,8 +111,8 @@
       > div {
         padding: 25px;
         box-sizing: border-box;
-        background: var(--b1);
-        border-radius: 20px;
+        box-shadow: 0 1px 2px 0 rgba(255, 255, 255, 0.15) inset;
+        background: rgba(0, 0, 0, 0.25);
       }
       > div:nth-child(2) {
         background: unset;
@@ -127,8 +123,8 @@
           width: 100%;
           padding: 25px;
           box-sizing: border-box;
-          background: var(--b1);
-          border-radius: 20px;
+          box-shadow: 0 1px 2px 0 rgba(255, 255, 255, 0.15) inset;
+          background: rgba(0, 0, 0, 0.25);
           span:nth-child(3) {
             margin-top: 10px;
           }
@@ -159,6 +155,21 @@
           width: 36px;
           height: 36px;
           transition: 0.2s ease;
+          -webkit-mask-image: linear-gradient(
+            to bottom right,
+            rgba(0, 0, 0, 1) 0%,
+            rgba(0, 0, 0, 0.5) 100%
+          );
+          mask-image: linear-gradient(
+            to bottom right,
+            rgba(0, 0, 0, 1) 0%,
+            rgba(0, 0, 0, 0.5) 100%
+          );
+          -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+
+          -webkit-mask-size: cover;
+          mask-size: cover;
           &:hover {
             transform: scale(1.15);
           }
@@ -179,19 +190,16 @@
       .info {
         max-height: unset;
         padding: 20px;
-        border-radius: 20px 20px 0 0;
       }
     }
     .information {
       max-width: 700px;
       h1 {
         order: 2;
-        border-radius: 0 0 20px 20px;
       }
       .information-inner {
         max-height: unset;
         padding: 20px;
-        border-radius: 0 0 20px 20px;
         > div:nth-child(2) {
           > div:nth-child(1) {
             max-width: 100%;
@@ -222,18 +230,14 @@
         align-items: center;
         box-shadow: unset;
         img {
-          max-height: 230px;
-          max-width: 230px;
-          border-radius: 20px;
           box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1),
             0 10px 10px rgba(0, 0, 0, 0.04);
         }
         div {
-          border-radius: 20px;
           box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1),
             0 10px 10px rgba(0, 0, 0, 0.04);
           text-align: center;
-          margin-top: 30px;
+          margin-top: 20px;
         }
         span {
           font-size: 1rem;

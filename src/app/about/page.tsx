@@ -20,7 +20,7 @@ export default function About() {
           <Marquee
             gap="10px"
             page="About me"
-            title="Andrix Design"
+            title="Andrix Development"
             time="30s"
             reverse={false}
           />
@@ -30,7 +30,7 @@ export default function About() {
           <Marquee
             gap="10px"
             page="About me"
-            title="Andrix Design"
+            title="Andrix Development"
             time="30s"
             reverse={true}
           />

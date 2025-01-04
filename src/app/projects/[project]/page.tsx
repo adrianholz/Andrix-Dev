@@ -57,7 +57,7 @@ export default function Project({
             page={`${projectData.title.name}${
               projectData.title.secondName ? projectData.title.secondName : ""
             }`}
-            title="Andrix Design"
+            title="Andrix Development"
             time="30s"
             reverse={false}
           />
@@ -122,7 +122,7 @@ export default function Project({
             page={`${projectData.title.name}${
               projectData.title.secondName ? projectData.title.secondName : ""
             }`}
-            title="Andrix Design"
+            title="Andrix Development"
             time="30s"
             reverse={true}
           />

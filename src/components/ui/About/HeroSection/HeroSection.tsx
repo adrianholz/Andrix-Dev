@@ -43,7 +43,7 @@ export default function HeroSection() {
           src="/assets/img/webp/adrianholzschuhfull.webp"
         />
       </div>
-      <div className="blur uxui active"></div>
+      <div className="blur code active"></div>
     </main>
   );
 }

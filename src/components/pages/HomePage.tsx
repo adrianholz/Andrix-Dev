@@ -7,7 +7,6 @@ import AboutSection from "../ui/Homepage/AboutSection/AboutSection";
 import ProjectsSection from "../ui/Homepage/ProjectsSection/ProjectsSection";
 import Tooltip from "../ui/Tooltip";
 import TechSection from "../ui/Homepage/TechSection/TechSection";
-import Marquee from "../ui/Marquee";
 
 export default function HomePage() {
   return (

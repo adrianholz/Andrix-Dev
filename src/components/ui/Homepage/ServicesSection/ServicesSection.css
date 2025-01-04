@@ -230,13 +230,13 @@
         height: 8px;
       }
       &::-webkit-scrollbar-track {
-        background: var(--b2);
-      }
-      &::-webkit-scrollbar-thumb {
         background: var(--b1);
       }
-      &::-webkit-scrollbar-thumb:hover {
+      &::-webkit-scrollbar-thumb {
         background: #aaa;
+      }
+      &::-webkit-scrollbar-thumb:hover {
+        background: #cecece;
       }
       .service-icon {
         min-width: 200px;

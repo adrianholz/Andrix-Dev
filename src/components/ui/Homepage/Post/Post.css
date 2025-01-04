@@ -97,15 +97,16 @@
         text-align: center;
         font-family: var(--font-chakra-petch);
         font-weight: 500;
-        color: var(--w1);
+        color: #aaa;
         padding: 18px 32px;
         border-radius: 0px;
         position: relative;
         margin-bottom: 6px;
         transition: 0.2s ease;
+        border: 1px solid transparent;
         &:hover {
-          background: var(--w1);
-          color: var(--b2);
+          border-color: var(--w1);
+          color: var(--w1);
         }
       }
     }

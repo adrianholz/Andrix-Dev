@@ -1,20 +1,36 @@
 .experience {
+  position: relative;
+  .blur {
+    z-index: 0;
+    width: 800px;
+    height: 300px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
   h1 {
-    background: var(--b1);
+    background: rgba(0, 0, 0, 0.25);
     font-size: 1.125rem;
     font-weight: 600;
     letter-spacing: 0.3rem;
     text-transform: uppercase;
     margin: 0 auto;
-    max-width: fit-content;
+    text-align: center;
     padding: 20px 40px;
-    border-radius: 20px 20px 0 0;
     color: var(--w1);
   }
   > div {
+    box-shadow: 0 1px 2px 0 rgba(255, 255, 255, 0.15) inset;
     background: var(--b2);
+    > div {
+      background: rgba(0, 0, 0, 0.25);
+    }
   }
   .experience-container {
+    position: relative;
+    z-index: 1;
     margin: 0 auto;
     max-width: fit-content;
     padding: 40px 20px;
@@ -31,7 +47,6 @@
     }
     &::-webkit-scrollbar-thumb {
       background: #aaa;
-      border-radius: 15px;
     }
     &::-webkit-scrollbar-thumb:hover {
       background: #cecece;
@@ -39,10 +54,10 @@
   }
   .experience-card {
     color: var(--w1);
-    background: var(--b1);
     box-sizing: content-box;
     padding: 40px 25px;
-    border-radius: 20px;
+    box-shadow: 0 1px 2px 0 rgba(255, 255, 255, 0.15) inset;
+    background: rgba(0, 0, 0, 0.25);
     min-width: 300px;
     max-width: 300px;
     h2,
@@ -68,6 +83,7 @@
     p {
       color: #aaa;
       line-height: 2rem;
+      font-weight: 400;
     }
     div {
       margin-top: 20px;
@@ -75,11 +91,10 @@
       flex-wrap: wrap;
       gap: 15px;
       h4 {
-        background: linear-gradient(to bottom right, var(--b1), var(--b2));
+        box-shadow: 0 1px 2px 0 rgba(255, 255, 255, 0.15) inset;
+        background: rgba(0, 0, 0, 0.25);
         font-weight: 500;
         padding: 18px;
-        border: 1px solid rgba(255, 255, 255, 0.25);
-        border-radius: 100px;
         display: block;
         max-width: fit-content;
       }
