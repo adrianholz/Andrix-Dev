@@ -4,8 +4,6 @@ declare global {
     short: string;
     file: string;
     description: string;
-    process: string;
-    position: string;
   };
   type Tags = {
     search: string;

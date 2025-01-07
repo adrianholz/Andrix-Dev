@@ -47,9 +47,9 @@ export default function Project({
     <SEO
       title={`${projectData.title.name}${
         projectData.title.secondName ? projectData.title.secondName : ""
-      } | Andrix Design`}
+      } | Andrix Dev`}
       description={projectData.description[0]}
-      url={`https://www.andrix.design/projects/${slug}`}
+      url={`https://www.andrix.dev/projects/${slug}`}
     >
       <ContactContextProvider>
         <ServiceContextProvider>
@@ -100,7 +100,7 @@ export default function Project({
                     position={component.position!}
                     video={component.video!}
                     {...("videoStyle" in component && {
-                      videoStyle: component.videoStyle,
+                      videoStyle: component.videoStyle as {} | undefined,
                     })}
                     animation={component.animation!}
                     preview={component.preview!}

@@ -11,9 +11,9 @@ import SEO from "../SEO";
 export default function News() {
   return (
     <SEO
-      title="News | Andrix Design"
-      description="Here at Andrix Design, we're always up to something new. Check out our latest news and updates."
-      url={`https://www.andrix.design/news`}
+      title="News | Andrix Dev"
+      description="Here at Andrix Dev, we're always up to something new. Check out our latest news and updates."
+      url={`https://www.andrix.dev/news`}
     >
       <ContactContextProvider>
         <ServiceContextProvider>

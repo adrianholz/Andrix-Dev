@@ -12,8 +12,8 @@ export default function About() {
   return (
     <SEO
       title="Adrian Holzschuh | Andrix Design"
-      description="Hello! My name is Adrian Holzschuh, and I am the and designer responsible for projects here at Andrix Design. Here are the digital design and UX/UI projects I've worked on."
-      url="https://www.andrix.design/about"
+      description="Hello! My name is Adrian Holzschuh, and I am the and front-end developer responsible for projects here at Andrix Dev. Here are all of the projects I've worked on."
+      url="https://www.andrix.dev/about"
     >
       <ContactContextProvider>
         <ServiceContextProvider>

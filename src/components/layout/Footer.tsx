@@ -100,7 +100,7 @@ export default function Footer({ type }: { type?: string }) {
           </div>
         </div>
         <div className="copyright">
-          <p>Andrix Design © All rights reserved.</p>
+          <p>Andrix Dev © All rights reserved.</p>
         </div>
       </div>
       <div

@@ -27,9 +27,9 @@ export default function Post({ params }: { params: Promise<PostParams> }) {
 
   return (
     <SEO
-      title={`${postData.title} | Andrix Design`}
+      title={`${postData.title} | Andrix Dev`}
       description={postData.sections[0].content!}
-      url={`https://www.andrix.design/news/${postData.title
+      url={`https://www.andrix.dev/news/${postData.title
         .toLowerCase()
         .replaceAll(" ", "-")}`}
     >

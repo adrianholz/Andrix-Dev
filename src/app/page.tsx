@@ -11,9 +11,9 @@ import SEO from "./SEO";
 export default function Home() {
   return (
     <SEO
-      title="Andrix Design | UX/UI & Digital Design"
-      description="Andrix Design is an initiative that aims for the delivery of groundbreaking design and user experience. Andrix is UX/UI, Digital Design, Video Editing and more."
-      url="https://www.andrix.design"
+      title="Andrix Dev | Front-End Development"
+      description="Andrix Dev is an initiative that specializes in Front-End Development. Andrix is Website Development, Digital Commerce, Web Applications and more."
+      url="https://www.andrix.dev"
     >
       <Marquee
         gap="10px"

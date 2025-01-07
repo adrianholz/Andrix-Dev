@@ -24,8 +24,8 @@ export default function ServicesSection() {
             <Title
               icon="compass"
               alt="Compass"
-              title="Made from scratch, without templates."
-              description="In the midst of a digital world filled with ready-made and adaptable templates, it's easy to become stagnant and end up with a generic design. My proposal is to precisely understand your needs, creating a tailor-made project, just for you."
+              title="Robust, scalable and personalized."
+              description="In the midst of a digital world filled with ready-made and adaptable templates, it's easy to become stagnant and end up with a generic project. My proposal is to precisely understand your needs, creating a tailor-made solution, just for you."
             />
 
             <Services

@@ -4,50 +4,35 @@ export const services = [
     file: "website",
     short: "Website",
     description:
-      "Leverage the power of colors, typography, spacing and form to create the experience you desire for your users. Every single element and detail of your interface should have intention and purpose. So let's make them count.",
-    process:
-      "The first step of every UX/UI project is understanding the project's goals and target audience. This is followed by research, wireframing, prototyping, and a continuous testing process with potential users.",
-    position: "bottom -70px right -80px",
+      "Your very own space on the web - display your work, services and projects exactly the way you want. Websites are a tool for success when done right: it's a showcase of your vision and values in order to connect, engage, and grow.",
   },
   {
     name: "Digital Commerce",
     file: "ecommerce",
     short: "E-Commerce",
     description:
-      "With so little time to capture your audience's attention, you need to make sure your visuals are on point. That's what maximizes conversions and makes your brand stand out. Let's make it happen with stunning digital design.",
-    process:
-      "After reviewing the project's requirements, we start by creating a mood board to set the visual direction. Then it's time to sketch and make sure we got the right concept before applying the textures and adjustments.",
-    position: "bottom -70px right -80px",
+      "Maximize your conversions. Having a platform to make sales for you 24/7 is a big advantage rather than relying on commission-hungry third-parties. Ensure scalability, reliability and profit by making your very own e-commerce.",
   },
   {
     name: "Web-based Applications",
     file: "code",
     short: "Web App",
     description:
-      "Communication is key. By defining rules and foundations for designing your company's projects, we convey your ideas, values, and purposes. Visual identity brings your brand to life and also enhances client relationship.",
-    process:
-      "Starting out by analyzing your target audience and your brand's core values, we craft an effective logo design and proceed to choosing the brand's color palette, typography and imagery.",
-    position: "bottom -70px right -80px",
+      "What's beyond a static website? The tailored functionality, dynamicity and interactivity of a web application. With real-time data processing and seamless user experience, this kind of tool streamlines workflow and solves problems.",
   },
   {
     name: "Desktop Applications",
     file: "desktop",
     short: "Desktop App",
     description:
-      "The digital space couldn't get more crowded nowadays. An effective social media strategy means that you can engage and, most importantly, retain your audience. Reach out to your audience and communicate with confidence.",
-    process:
-      "The first step is to determine what do you want to communicate and to whom. Then we create post prototypes based on your brand identity, refine them, and publish consistently, always keeping track of the results.",
-    position: "bottom -70px right -80px",
+      "Harness the best of web technologies and use them to take full advantage of your system's capabilities. With file system access, multimedia handling and process management, the possibilities are endless for desktop applications.",
   },
   {
     name: "Game Development",
     file: "game",
     short: "Game",
     description:
-      "Your products deserve the same love as your digital content. Packaging design is there to make sure that, besides being functional, your products stand out on the shelves and in your customers' minds.",
-    process:
-      "We first have to determine the shape and size of the package, and in which material it will be applied to. Then we analyze the product itself and how we can convey, visually, the experience that's inside of the package.",
-    position: "bottom -70px right -80px",
+      "What better way to deliver interactivity than having the users as active, real-time participants? Complementing any digital project by making them players is definitely best way to engage - and keep them engaged.",
   },
 ];
 
@@ -65,10 +50,34 @@ export const tools = [
     link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
   },
   {
+    name: "Sass",
+    blur: "#fd4684",
+    drop: "#fd468470",
+    link: "https://sass-lang.com",
+  },
+  {
+    name: "Tailwind",
+    blur: "#61DAFB",
+    drop: "#61DAFB70",
+    link: "https://tailwindcss.com",
+  },
+  {
+    name: "Bootstrap",
+    blur: "#943BEE",
+    drop: "#943BEE70",
+    link: "https://getbootstrap.com",
+  },
+  {
     name: "JavaScript",
     blur: "#F7DF1E",
     drop: "#F7C11E70",
     link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+  },
+  {
+    name: "jQuery",
+    blur: "#75b2df",
+    drop: "#4297ff70",
+    link: "https://jquery.com",
   },
   {
     name: "TypeScript",
@@ -93,6 +102,18 @@ export const tools = [
     blur: "#61DAFB70",
     drop: "#61DAFB70",
     link: "https://www.electronjs.org/pt/",
+  },
+  {
+    name: "Redux",
+    blur: "#943BEE70",
+    drop: "#943BEE70",
+    link: "https://redux.js.org",
+  },
+  {
+    name: "VueJS",
+    blur: "#61DAFB70",
+    drop: "#2be04070",
+    link: "https://vuejs.org",
   },
   {
     name: "Python",

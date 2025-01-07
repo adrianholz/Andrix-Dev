@@ -9,7 +9,7 @@ export const experiences = [
   },
   {
     position: "UX/UI Designer & Web Developer",
-    company: "Andrix Design",
+    company: "Andrix Design/Dev",
     period: "Jan 2020 - Present",
     description:
       "Worked as main developer and designer on various projects. Specialized in web development (Front-End) and digital design (User Experience/User Interface).",

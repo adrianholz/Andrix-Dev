@@ -11,9 +11,9 @@ import SEO from "../SEO";
 export default function Projects() {
   return (
     <SEO
-      title="Projects | Andrix Design"
-      description="There's many different projects here at Andrix Design, including UX/UI, Digital Design, Video Editing, Visual Identity, Social Media and Packaging Design."
-      url="https://www.andrix.design/projects"
+      title="Projects | Andrix Dev"
+      description="There's many different projects here at Andrix Dev, including static websites, e-commerces, web applications, desktop applications, and games."
+      url="https://www.andrix.dev/projects"
     >
       <ContactContextProvider>
         <ServiceContextProvider>

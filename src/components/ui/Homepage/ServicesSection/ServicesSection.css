@@ -100,7 +100,7 @@
       }
       video {
         max-width: 300px;
-        margin-top: 25px;
+        margin-top: 18px;
         opacity: 0;
         transition: 0.2s ease;
         position: relative;

@@ -73,7 +73,9 @@ export default function Projects({ tags }: { tags: Tags }) {
                         className="project-cover"
                         sizes="(max-width: 330px) 100vw, 330px"
                         style={
-                          project.type !== "website"
+                          project.type !== "website" &&
+                          project.type !== "ecommerce" &&
+                          project.type !== "code"
                             ? { objectPosition: "center", transition: "none" }
                             : {}
                         }

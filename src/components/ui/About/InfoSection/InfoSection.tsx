@@ -42,13 +42,13 @@ export default function InfoSection() {
               </div>
               <p>
                 Hello! My name is <strong>Adrian Holzschuh</strong>, and I am
-                the and designer responsible for projects here at{" "}
-                <strong>Andrix Design</strong>. <br />
+                the and developer responsible for projects here at{" "}
+                <strong>Andrix Dev</strong>. <br />
                 <br />
                 Being interested in technology from a very young age, I have
                 always been fascinated by the possibility of externalizing my
                 creativity through digital means. As of today, I have been
-                working with graphic and digital design for over 5 years, and am
+                working with front-end development for over 5 years, and am
                 happy to say that I've been able to help many clients achieve
                 their goals through my work. Through Andrix, I can now showcase
                 the skills I've acquired over the years and help you achieve the
@@ -62,8 +62,8 @@ export default function InfoSection() {
               <div>
                 <span>Specializations</span>
                 <p>
-                  Graphic, Digital <br />
-                  and UX/UI Design
+                  Web and Front-End <br />
+                  Development
                 </p>
               </div>
               <div>

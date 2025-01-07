@@ -49,7 +49,7 @@ export default function Services({
             }}
           />
           <video
-            src={`/assets/video/retroverse.webm`}
+            src={`/assets/video/${service.file}.webm`}
             autoPlay
             muted
             loop

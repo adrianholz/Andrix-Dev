@@ -13,26 +13,16 @@ export default function HeroSection() {
           <h2>UX/UI & Digital Designer</h2>
           <div className="calls">
             <a
-              href="#education"
-              onClick={(event) => {
-                event.preventDefault();
-                document.querySelector("#education")!.scrollIntoView({
-                  behavior: "smooth",
-                });
-              }}
+              href="/assets/files/pdf/Adrian Holzschuh Resume.pdf"
+              target="_blank"
             >
-              Education
+              Resume
             </a>
             <a
-              href="#experience"
-              onClick={(event) => {
-                event.preventDefault();
-                document.querySelector("#experience")!.scrollIntoView({
-                  behavior: "smooth",
-                });
-              }}
+              href="https://www.linkedin.com/in/adrianholzschuh/"
+              target="_blank"
             >
-              Experience
+              LinkedIn
             </a>
           </div>
         </div>

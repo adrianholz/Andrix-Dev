@@ -100,13 +100,9 @@ export default function Header({ type }: { type?: string }) {
               </ul>
             </nav>
 
-            <a
-              href="/assets/files/pdf/Adrian Holzschuh Resume.pdf"
-              target="_blank"
-              className="resume"
-            >
-              <img src="/assets/img/svg/resume.svg" alt="Resume" />
-              <p>Resume</p>
+            <a href="https://www.andrix.design" className="header-call">
+              <img src="/assets/img/svg/design.svg" alt="Design Icon" />
+              <p>Design</p>
               <div
                 className={`blur ${type ? type : "code"} active`}
                 ref={(el) => {
