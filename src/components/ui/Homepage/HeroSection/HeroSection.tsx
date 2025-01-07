@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { services } from "../../../../data/home-data";
 import "swiper/css";
 import Post from "../Post/Post";
-import { useContext, useRef } from "react";
+import { useContext } from "react";
 import "./HeroSection.css";
 import { ServiceContext } from "../../../../app/ServiceContext";
 import { news } from "../../../../data/news-data";

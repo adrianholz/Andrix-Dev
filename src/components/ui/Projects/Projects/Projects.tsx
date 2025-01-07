@@ -2,7 +2,6 @@ import { projects } from "../../../../data/projects-data";
 import "./Projects.css";
 import Image from "next/image";
 import Link from "next/link";
-import Atropos from "atropos/react";
 
 type Tags = {
   search: string;

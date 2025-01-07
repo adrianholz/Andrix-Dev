@@ -2,7 +2,6 @@
 
 import { useEffect, useRef, useState } from "react";
 import TypewriterComponent from "typewriter-effect";
-import Marquee from "./Marquee";
 import "./Transition.css";
 
 export default function Transition() {
