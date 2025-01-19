@@ -2,7 +2,7 @@ export const experiences = [
   {
     position: "Lead Front-End Developer",
     company: "Dougal Technologies Inc.",
-    period: "Apr 2024 - Present",
+    period: "Jun 2024 - Present",
     description:
       "Leading Front-End development with React, Next.JS, and Flutter frameworks. Additionally responsible for supporting UX/UI designers with design tasks.",
     skills: ["ReactJS", "NextJS", "UX/UI & Web Design"],

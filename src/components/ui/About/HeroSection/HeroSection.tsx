@@ -10,7 +10,7 @@ export default function HeroSection() {
           <h1>
             Adrian <span>Holzschuh</span>
           </h1>
-          <h2>UX/UI & Digital Designer</h2>
+          <h2>Front-End Developer</h2>
           <div className="calls">
             <a
               href="/assets/files/pdf/Adrian Holzschuh Resume.pdf"
